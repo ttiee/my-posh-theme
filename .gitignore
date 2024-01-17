@@ -1,0 +1,7 @@
+*
+!theme
+!theme/*.omp.json
+!Microsoft.PowerShell_profile.ps1
+!.gitignore
+!README.md
+!LICENSE
