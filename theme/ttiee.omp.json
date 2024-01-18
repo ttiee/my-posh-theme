@@ -94,14 +94,28 @@
           "type": "path"
         },
         {
-          "foreground": "#A9FFB4",
+          "foreground": "#0c7bbb",
           "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
           "properties": {
-            "always_enabled": true
+            "alpine": "\uf300",
+            "arch": "\uf303",
+            "centos": "\uf304",
+            "debian": "\uf306",
+            "elementary": "\uf309",
+            "fedora": "\uf30a",
+            "gentoo": "\uf30d",
+            "linux": "\ue712",
+            "macos": "\ue711",
+            "manjaro": "\uf312",
+            "mint": "\uf30f",
+            "opensuse": "\uf314",
+            "raspbian": "\uf315",
+            "ubuntu": "\uf31c",
+            "windows": "\ue70f"
           },
-          "style": "plain",
-          "template": "\ue62a ",
-          "type": "status"
+          "style": "diamond",
+          "template": " {{ if .WSL }}\ue712 on {{ end }}{{ .Icon }} ",
+          "type": "os"
         }
       ],
       "type": "prompt"
